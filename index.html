@@ -39,18 +39,25 @@
   .pie li{margin-bottom:5px}
   .num{font-variant-numeric:tabular-nums}
   @media print{ thead th{position:static} body{background:#fff} }
+  a.ref{text-decoration:none}
+  a.ref sup{color:#2563eb;font-weight:700;cursor:pointer;padding:0 1px}
+  a.ref:hover sup{text-decoration:underline}
+  .volver{margin-left:6px;text-decoration:none;color:#2563eb;font-weight:700}
+  .volver:hover{text-decoration:underline}
+  li:target{background:#fef9c3;border-radius:4px;padding:2px 4px}
+  :target{scroll-margin-top:14px}
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>Viaje de egresados Bariloche 2028 — Baxtter vs MaxDream</h1>
-  <p class="sub">Comparativa basada en los contratos oficiales, anexos, propuestas y respuestas escritas de las empresas. Actualizada el 7/6/2026.</p>
+  <p class="sub">Comparativa basada en el contrato + anexo Brown de Baxtter y en el contrato + detalle Brown de MaxDream. Actualizada el 10/6/2026.</p>
 
   <div class="leyenda">
     <span>🟩 <b>Recuadro verde</b> = mejor opción del ítem (sin recuadro = empate o sin dato comparable)</span>
-    <span><s>Tachado</s> = lo que dice el contrato, modificado por el anexo/propuesta</span>
-    <span>✏️ = anexo Brown 2028 y respuestas escritas (Baxtter) / propuesta junio 2026 (MaxDream)</span>
-    <span>⚠️ = no está en el contrato firmable: propuesta, folleto o respuesta por WhatsApp</span>
+    <span><s>Tachado</s> = lo que dice el contrato base, modificado por el detalle/anexo del grupo</span>
+    <span>✏️ = lo que el anexo/detalle Brown define para el grupo (Baxtter: anexo Brown · MaxDream: detalle Brown)</span>
+    <span>⚠️ = MaxDream: precios y beneficios que siguen viniendo solo de la propuesta de junio, no del detalle Brown</span>
   </div>
 
   <table>
@@ -73,20 +80,20 @@
       <td class="item">Vuelo</td>
       <td>Línea regular: Andes / Aerolíneas Argentinas / JetSMART
         <span class="mod">Anexo: vuelo de línea regular desde Aeroparque o Ezeiza (~2 h)</span></td>
-      <td>Línea regular: Aerolíneas Argentinas / JetSMART / Flybondi, o chárter de líneas regulares
-        <span class="mod"><s>línea regular</s> Propuesta: vuelos chárter privados "NO ANDES" ⚠️<sup>1</sup></span></td>
+      <td>Aerolíneas Argentinas / JetSMART / Flybondi o chárter de líneas regulares
+        <span class="mod">Detalle Brown: Aerolíneas como <b>opción "tangible"</b> (colegios de la zona viajaron en 2025 con AA), pero también puede ser <b>chárter privado "NO ANDES"</b> · primeros vuelos del día · <b>transfer incluido si el vuelo sale de Ezeiza</b> · si el regreso se retrasa, cubren hotel y comidas · equipaje 15 + 8 kg + bolso</span></td>
     </tr>
 
     <tr>
       <td class="item">Hoteles — opciones</td>
       <td><s>6 hoteles céntricos: Aguas del Sur, Monte Claro, Patagonia Sur (Complejo Mole), Patagonia, Bariloche Ski, Cambria · el grupo elige 3 de preferencia</s>
-        <span class="mod">Respuesta escrita ⚠️<sup>8</sup>: opciones vigentes <b>sin Bariloche Ski</b> — Complejo Mole (Monte Claro, Aguas del Sur, Patagonia Sur), Cambria y Patagonia "Playa" · <b>el hotel elegido se asienta directo en el contrato</b></span></td>
+        <span class="mod">Anexo: opciones vigentes <b>sin Bariloche Ski</b> — Complejo Mole (Monte Claro, Aguas del Sur, Patagonia Sur), Cambria y Patagonia "Playa" · <b>el hotel elegido se asienta directo en el contrato</b></span></td>
       <td>7 hoteles exclusivos MAX: Villa Huinid, EcoMax, Kilton, Huemul, Lagos Andinos, Crans Montana, Interlaken · el grupo elige 2 de preferencia
-        <span class="mod">Propuesta: elección libre del hotel (con pileta climatizada o spa) sin costo extra ⚠️<sup>1</sup></span></td>
+        <span class="mod">Propuesta: elección libre del hotel (con pileta climatizada o spa) sin costo extra ⚠️<a class="ref" id="ref-1-1" href="#nota-1"><sup>1</sup></a></span></td>
     </tr>
 
     <tr>
-      <td class="item">Hoteles — calificación Google (promedio ponderado por reseñas)<sup>6</sup></td>
+      <td class="item">Hoteles — calificación Google (promedio ponderado por reseñas)<a class="ref" id="ref-6-1" href="#nota-6"><sup>6</sup></a></td>
       <td class="mejor"><span class="badge">MEJOR</span><br><b class="num">4,30 ★</b> <span class="nota">5 hoteles vigentes · 7.251 reseñas (con la lista del contrato, que incluía Bariloche Ski 3,9★: 4,27★)</span></td>
       <td><b class="num">4,20 ★</b> <span class="nota">7 hoteles · 8.007 reseñas · Mejor hotel del cuadro: Villa Huinid Bustillo 4,5★ — pero ojo: EcoMax es #142 de 152 en TripAdvisor</span></td>
     </tr>
@@ -99,7 +106,7 @@
         <li>Cambria — 4,3 ★ · 1.651</li>
         <li>Patagonia Sur — 4,2 ★ · 960</li>
         <li>Aguas del Sur — 4,1 ★ · 1.127</li>
-        <li><s>Bariloche Ski — 3,9 ★ · 598</s> (fuera de las opciones ✏️⚠️<sup>8</sup>)</li>
+        <li><s>Bariloche Ski — 3,9 ★ · 598</s> (fuera de las opciones ✏️)</li>
       </ul></td>
       <td><ul class="h num">
         <li>Villa Huinid Bustillo — 4,5 ★ · 1.088</li>
@@ -116,43 +123,43 @@
       <td class="item">Régimen de comidas</td>
       <td>Pensión completa con gaseosas libres
         <span class="mod">Anexo: 4 comidas + fast food al volver de la disco · dietas especiales · menú supervisado por fundación ALCO (Dr. Cormillot)</span></td>
-      <td>Pensión completa tipo buffet con bebidas libres + After Club (fast food post-disco) · dietas especiales (contrato)
-        <span class="nota">⚠️ Folleto: menúes de Lele Cristobal, Natural Point 24 h, merienda Mamuschka<sup>2</sup></span></td>
+      <td>Pensión completa tipo buffet con bebidas libres + After Club (fast food post-disco) · dietas especiales
+        <span class="mod">Detalle Brown: FULL SERVICE (Open Buffet) + Natural Point 24 h (frutas, jugos, smoothies) · menú de chef internacional</span></td>
     </tr>
 
     <tr>
       <td class="item">Excursiones y actividades — programa</td>
       <td><s>12 actividades</s>
-        <span class="mod">Anexo: 16 actividades (Ski Day, Piedras Blancas, cuatriciclos, paintball, canopy, día de estancia, fábrica de chocolates, fiestas, etc.), equipamiento incluido</span></td>
-      <td>11 actividades en contrato (Ski, Snow Bike, Tour Patagónico, Liquid Flúo, día de campo Tom Wesley, MXD 1000, canopy, etc.)
-        <span class="mod">Propuesta: suma paintball, fourtrax, trineos nórdicos y show de velas (~15) ⚠️<sup>1</sup></span>
-        <span class="nota">⚠️ Folleto: dice 18 actividades<sup>2</sup></span></td>
+        <span class="mod">Anexo: 18 actividades, equipamiento incluido — suma <b>Snow Feet</b> y <b>Winter Jump</b> (nieve, en pista privada Baxtter) a Ski, Piedras Blancas, cuatriciclos, paintball, canopy, día de estancia, fábrica de chocolates, fiestas, etc.</span></td>
+      <td><s>11 actividades en contrato</s>
+        <span class="mod">Detalle Brown: 17 actividades, encabezadas por las 4 de nieve exclusivas (Cerro Catedral Explore, Ski/Snowboard, Snow Bike, Trineos Nórdicos) + Welcome, Tour Patagónico, día de campo, MXD Festival, Max Chef, Liquid Flúo, MXD 100, Paintball, Fourtrak, We Color, Hibernation, fábricas, Last Night · paquete cerrado sin extras en destino · garantía de nieve en Catedral (centro N°1 de Sudamérica): medios de elevación, magic carpet, aerosillas, patrulla y centro traumatológico</span></td>
     </tr>
 
     <tr>
-      <td class="item">Actividades compartidas — calificación Google<sup>9</sup></td>
+      <td class="item">Actividades compartidas — calificación Google<a class="ref" id="ref-9-1" href="#nota-9"><sup>9</sup></a></td>
       <td colspan="2" style="background:#f9fafb">Ambas empresas usan <b>los mismos prestadores</b> en lo central, así que en esto empatan: Cerro Catedral / Alta Patagonia <b class="num">4,6★</b> (19.132 reseñas) y las discos del grupo Alliance/Efesur — By Pass <b class="num">4,7★</b> (1.331) · Grisú <b class="num">4,6★</b> (766) · Cerebro <b class="num">4,5★</b> (3.400) · Roket <b class="num">4,5★</b> (3.124) · Genux <b class="num">4,3★</b> (2.908). Queja repetida en Genux: DJs que cortan la música para sorteos en noches de egresados.</td>
     </tr>
 
     <tr>
-      <td class="item">Actividades diferenciales — calificación Google<sup>9</sup></td>
+      <td class="item">Actividades diferenciales — calificación Google<a class="ref" id="ref-9-2" href="#nota-9"><sup>9</sup></a></td>
       <td>Piedras Blancas (trineos, Cerro Otto) — <b class="num">4,4 ★</b> (10.358 reseñas): masivo y muy popular; quejas por esperas cuando abre una sola pista · Cerro Otto 4,3★ · "Aventura Baxtter" y día de estancia: prestador sin reseñas identificables</td>
       <td class="mejor"><span class="badge">MEJOR</span><br>Día de campo Tom Wesley — <b class="num">4,6 ★</b> (2.584 reseñas): elogios muy consistentes (cabalgatas, asado) · Snow Bike en Catedral (4,6★) · Liquid Flúo y MXD Festival: predio propio sin reseñas públicas</td>
     </tr>
 
     <tr>
       <td class="item">Noches de disco</td>
-      <td class="mejor"><span class="badge">MEJOR</span><br>Todas las noches (8) en discos clase A · 1 consumición sin alcohol · night bus ida y vuelta
+      <td>8 noches en discos clase A · 1 consumición sin alcohol · night bus ida y vuelta
         <span class="mod">Anexo: + repeticiones, fiestas temáticas todas las noches y mantas térmicas</span></td>
-      <td>7 noches de disco con 1 consumición sin alcohol · traslados programados ida y vuelta · 8 fiestas temáticas</td>
+      <td><s>7 noches de disco</s>
+        <span class="mod">Detalle Brown: <b>8 noches</b> en discos clase A + 3 repeticiones · 1 consumición · rondín de buses cada 15 min puerta a puerta · abrigo nocturno sin costo</span></td>
     </tr>
 
     <tr>
       <td class="item">Indumentaria de nieve</td>
-      <td class="mejor"><span class="badge">MEJOR</span><br><s>El contrato no la detalla</s>
+      <td><s>El contrato no la detalla</s>
         <span class="mod">Anexo: campera, pantalón y botas <b>todos los días</b>, con seguro por roturas y recambio diario + kit de seguridad (guantes, antiparras, casco)</span></td>
-      <td>4 días de indumentaria (borcegos, pantalón y campera) — el seguro por rotura de ropa térmica está excluido del contrato
-        <span class="mod">Propuesta: muda para toda la semana desde el día 1 + seguro de nieve + capas de lluvia ⚠️<sup>1</sup></span></td>
+      <td><s>4 días de indumentaria · seguro de rotura excluido del contrato</s>
+        <span class="mod">Detalle Brown: equipo (campera, pantalón y botas) <b>para todo el tour</b> con <b>seguro de rotura y lavandería incluidos</b>, recambio diario + kit (casco, antiparras, capas de lluvia)</span></td>
     </tr>
 
     <tr>
@@ -162,27 +169,29 @@
     </tr>
 
     <tr>
-      <td class="item">Prestadora médica y reputación online<sup>3</sup></td>
+      <td class="item">Prestadora médica y reputación online<a class="ref" id="ref-3-1" href="#nota-3"><sup>3</sup></a></td>
       <td class="mejor"><span class="badge">MEJOR</span><br><b>Assist Card</b>: Google 4,5★ (2.006 reseñas) · Trustpilot 4,3
         <span class="mod">Anexo: médicos permanentes en hotel/excursiones/discos, ambulancias 24 h, convenio Sanatorio/Clínica San Carlos, cobertura 100% hasta el alta</span>
         <span class="nota">Queja típica online: demoras en reembolsos</span></td>
       <td><b>AssisTravel</b> (Worly Baires S.A.): Google 4,1★ (384 reseñas) + <b>Vittal</b>: Google 2,0★ (125 reseñas, sede central)
-        <span class="mod">Propuesta: doble cobertura médica + área protegida ⚠️<sup>1</sup></span>
-        <span class="nota">⚠️ Folleto: priority access en Hospital Privado Regional, base propia frente a las discos<sup>2</sup> · Quejas online de Vittal: demoras en ambulancias (servicio de abonados)</span></td>
+        <span class="mod">Detalle Brown: Priority Access en el Hospital Privado Regional (sala diferenciada y guardia para egresados), ambulancia exclusiva UTIM de Vittal toda la estadía, atención exclusiva en Catedral, consultorio 24 h en hoteles · <b>si un pasajero no puede seguir el viaje, la empresa paga vuelo + estadía + regreso de un familiar directo</b> · avión sanitario SAPSA</span>
+        <span class="nota">Quejas online de Vittal: demoras en ambulancias (servicio de abonados)</span></td>
     </tr>
 
     <tr>
       <td class="item">Control de pasajeros / seguridad</td>
-      <td class="mejor"><span class="badge">MEJOR</span><br>Pulsera PAX ID Platinum
+      <td>Pulsera PAX ID Platinum
         <span class="mod">Anexo: <b>doble</b> pulsera (Efesur/Alliance + propia exclusiva) con ficha médica online · control in/out en hotel, discos y excursiones · DEA, cámaras 24/7 en hoteles</span></td>
-      <td>Pulsera con chip MXD ID by Security Max · control de ingreso/egreso en hoteles y discos · ficha médica digitalizada</td>
+      <td><s>Pulsera con chip MXD ID by Security Max · control en hoteles y discos</s>
+        <span class="mod">Detalle Brown: <b>doble</b> pulsera (Efesur + MXD ID con RFID) con ficha médica online · control in/out en hotel, discos y actividades · cámaras 24 h en todos los hoteles</span></td>
     </tr>
 
     <tr>
       <td class="item">Coordinación</td>
-      <td><b>Tercerizada</b>: Sociedad Argentina de Coordinadores de Viaje S.A. (responsable directa del servicio) · mayores de 21 años</td>
-      <td class="mejor"><span class="badge">MEJOR</span><br><b>Propia</b>, habilitada por la empresa · staff 24/7 registrado en Río Negro
-        <span class="mod">Propuesta: "staff de coordinación propio – no tercerizado" ⚠️<sup>1</sup></span></td>
+      <td><s><b>Tercerizada</b>: Sociedad Argentina de Coordinadores de Viaje S.A.</s>
+        <span class="mod">Anexo: líderes son <b>personal propio</b> de la empresa; al SAC solo lo usan para validar la carpeta administrativa · se aclara en el anexo</span></td>
+      <td><b>Propia, no tercerizada</b> · staff 24/7 registrado en Río Negro
+        <span class="mod">Detalle Brown: "coordinación propia, no tercerizada"</span></td>
     </tr>
 
     <tr>
@@ -197,32 +206,29 @@
     <tr class="seccion"><td colspan="3">2 · Costos</td></tr>
 
     <tr>
-      <td class="item">Pago contado / pocas cuotas (total a pagar)<sup>4</sup></td>
+      <td class="item">Pago contado / pocas cuotas (total a pagar)<a class="ref" id="ref-4-1" href="#nota-4"><sup>4</sup></a></td>
       <td><s>Contrato con los valores en blanco</s>
         <span class="mod">Anexo — Plan C, 3 cuotas fijas de $832.000: $2.400.000 + $96.000 caución + $250.000 insc. = <b class="num">$2.746.000</b> (caución incluida)</span>
-        <span class="mod">Respuesta escrita ⚠️<sup>8</sup>: pagar en 1 sola cuota cuesta lo mismo que en 3 ($2.400.000)</span></td>
-      <td class="mejor"><span class="badge">MEJOR</span><br><s>Campo en blanco en contrato</s>
-        <span class="mod">Propuesta ⚠️<sup>1</sup> — contado: $2.270.500 + $250.000 insc. = <b class="num">$2.520.500</b> (Plan 1, con liberados) <u>+ caución Woranz aparte (sin cotizar)</u></span>
-        <span class="nota">Plan 2 (sin liberados): $2.400.000 · Sumando la caución del 3% que MaxDream informa de palabra (≈$68.000 ⚠️<sup>7</sup>), total ≈ $2.588.500: ~$157.000 más barato que Baxtter</span></td>
+        <span class="mod">Anexo: pagar en 1 sola cuota cuesta lo mismo que en 3 ($2.400.000)</span></td>
+      <td class="mejor"><span class="badge">MEJOR</span><br>Precios (Plan 1, con liberados) ⚠️<a class="ref" id="ref-1-2" href="#nota-1"><sup>1</sup></a>: contado $2.270.500 + caución 2,5% $56.762 + $250.000 insc. = <b class="num">$2.577.262</b>
+        <span class="nota">Caución 2,5% confirmada por escrito en el detalle Brown · ~$169.000 más barato que Baxtter</span></td>
     </tr>
 
     <tr>
-      <td class="item">Plan intermedio en cuotas fijas<sup>4</sup></td>
+      <td class="item">Plan intermedio en cuotas fijas<a class="ref" id="ref-4-2" href="#nota-4"><sup>4</sup></a></td>
       <td><s>Plan C promocional 10 cuotas fijas — valores en blanco</s>
         <span class="mod">Anexo — Plan B, 10 cuotas fijas de $310.960: $2.990.000 + $119.600 caución + $250.000 insc. = <b class="num">$3.359.600</b> (caución incluida)</span></td>
-      <td class="mejor"><span class="badge">MEJOR</span><br><s>Campos en blanco en contrato</s>
-        <span class="mod">Propuesta ⚠️<sup>1</sup> — 13 cuotas fijas de $226.000 + $250.000 insc. = <b class="num">$3.188.000</b> + caución aparte · 3 cuotas de $796.000 = $2.638.000 + caución</span>
-        <span class="nota">Con la caución del 3% informada de palabra (≈$88.000 ⚠️<sup>7</sup>), 13 cuotas ≈ $3.276.000: ~$83.000 menos que Baxtter (~2,5%)</span></td>
+      <td class="mejor"><span class="badge">MEJOR</span><br>Precios ⚠️<a class="ref" id="ref-1-3" href="#nota-1"><sup>1</sup></a>: 13 cuotas de $226.000 ($2.938.000) + caución 2,5% $73.450 + $250.000 insc. = <b class="num">$3.261.450</b>
+        <span class="nota">~$98.000 menos que Baxtter</span></td>
     </tr>
 
     <tr>
-      <td class="item">Plan máximas cuotas (total a pagar)<sup>4</sup></td>
+      <td class="item">Plan máximas cuotas (total a pagar)<a class="ref" id="ref-4-3" href="#nota-4"><sup>4</sup></a></td>
       <td class="mejor"><span class="badge">MEJOR</span><br><s>Plan B máximas cuotas (tope 100% IPC) — valores en blanco</s>
-        <span class="mod">Anexo + chequera Brown ⚠️<sup>8</sup>: 25 cuotas fijas de $136.000 (jul-2026 a jul-2028) + inscripción 2×$150.000 + caución $136.000 = <b class="num">$3.836.000</b> (caución incluida)</span>
-        <span class="nota">⚠️ La chequera agrega un "Seguro Integral (30 días)" con <b>valor a confirmar</b> — pedir el monto antes de firmar<sup>8</sup></span></td>
-      <td><s>Campo en blanco en contrato</s>
-        <span class="mod">Propuesta ⚠️<sup>1</sup> — 27 cuotas fijas de $131.000 + $250.000 insc. = <b class="num">$3.787.000</b> + caución aparte</span>
-        <span class="nota">Con la caución del 3% informada de palabra (≈$106.000 ⚠️<sup>7</sup>) ≈ $3.893.000: ~$57.000 más caro que Baxtter</span></td>
+        <span class="mod">Anexo: 25 cuotas fijas de $136.000 (jul-2026 a jul-2028) + inscripción 2×$150.000 + caución $136.000 = <b class="num">$3.836.000</b> (caución incluida)</span>
+        <span class="nota">El "Seguro Integral (30 días)" de la chequera <b>no se cobra</b>: solo se abona el depósito hotelero</span></td>
+      <td>Precios ⚠️<a class="ref" id="ref-1-4" href="#nota-1"><sup>1</sup></a>: 27 cuotas de $131.000 ($3.537.000) + caución 2,5% $88.425 + $250.000 insc. = <b class="num">$3.875.425</b>
+        <span class="nota">~$39.000 más caro que Baxtter</span></td>
     </tr>
 
     <tr>
@@ -230,7 +236,7 @@
       <td><s>"Cuota cero" + gastos administrativos — valor en blanco</s>
         <span class="mod">Anexo: $300.000 (Plan A) / $250.000 (Planes B y C), pagadera en dos cuotas</span></td>
       <td>Seña/reserva destinada a gastos administrativos, <b>no reintegrable</b>
-        <span class="mod">Propuesta: $250.000 en todos los planes ⚠️<sup>1</sup></span></td>
+        <span class="mod">Propuesta: $250.000 en todos los planes ⚠️<a class="ref" id="ref-1-5" href="#nota-1"><sup>1</sup></a></span></td>
     </tr>
 
     <!-- ============ 3. LIBERADOS Y BONIFICADOS ============ -->
@@ -240,10 +246,10 @@
       <td class="item">Liberados (estudiantes)</td>
       <td class="mejor"><span class="badge">MEJOR</span><br><s>1 cada 10 pasajeros pagos al 100%</s>
         <span class="mod">Anexo: <b>3 cada 18 pagos (= 1 cada 6)</b> · prorrateables en las últimas cuotas entre el grupo activo, faltando 90 días</span>
-        <span class="mod">Respuesta escrita ⚠️<sup>8</sup>: para un grupo de 30 ofrecen <b>4 liberados + 2 bonificados</b>, con piso garantizado por contrato ("caso contrario, 1 cada 8") si se bajan chicos</span>
+        <span class="mod">Anexo: para un grupo de 30 ofrecen <b>4 liberados + 2 bonificados</b>, con piso garantizado por contrato ("caso contrario, 1 cada 8") si se bajan chicos</span>
         <span class="nota">El prorrateo contradice el contrato ("no podrán ser descontados del valor general"): quedó habilitado por escrito en el anexo</span></td>
       <td><s>1 cada 12 pasajeros pagos al 100%</s>
-        <span class="mod">Propuesta: 1 cada 8 (solo Plan 1; el Plan 2 no tiene liberados) ⚠️<sup>1</sup></span></td>
+        <span class="mod">Propuesta: 1 cada 8 (solo Plan 1; el Plan 2 no tiene liberados) ⚠️<a class="ref" id="ref-1-6" href="#nota-1"><sup>1</sup></a></span></td>
     </tr>
 
     <tr>
@@ -251,20 +257,22 @@
       <td><s>1 cada 20 pasajeros pagos (padres/madres/docentes mayores de 35 años)</s>
         <span class="mod">Anexo: 1 cada 15 pasajeros pagos al 100%</span></td>
       <td class="mejor"><span class="badge">MEJOR</span><br><s>1 cada 20 pasajeros pagos al 100%</s>
-        <span class="mod">Propuesta: 1 cada 12 ⚠️<sup>1</sup></span></td>
+        <span class="mod">Propuesta: 1 cada 12 ⚠️<a class="ref" id="ref-1-7" href="#nota-1"><sup>1</sup></a></span></td>
     </tr>
 
     <tr>
       <td class="item">Qué paga igual el liberado</td>
       <td class="mejor"><span class="badge">MEJOR</span><br><s>Gastos administrativos + seguros + asistencia médica y al viajero + tasas, impuestos y fees</s>
-        <span class="mod">Respuesta escrita ⚠️<sup>8</sup>: liberado o bonificado al 100% paga el <b>10% de seguros e inscripción</b> · si el liberado se divide entre varias familias, no se paga nada extra · a quienes pagan en 1 o 3 cuotas, la proporción de liberado se les descuenta de las tasas</span></td>
-      <td><b>15% del tarifario vigente</b> + tasas e impuestos + <b>su ticket aéreo</b> (excluido para liberados/bonificados) · si no se lo nomina en 60 días, ese 15% aumenta</td>
+        <span class="mod">Anexo: liberado o bonificado al 100% paga el <b>10% de seguros e inscripción</b> · si el liberado se divide entre varias familias, no se paga nada extra · a quienes pagan en 1 o 3 cuotas, la proporción de liberado se les descuenta de las tasas</span></td>
+      <td><s>15% del tarifario + tasas + su ticket aéreo (excluido)</s>
+        <span class="mod">Detalle Brown: 15% del tarifario vigente (reserva + emisión, seguros, asistencias) + tasas e impuestos, pero <b>el ticket aéreo está incluido</b></span></td>
     </tr>
 
     <tr>
       <td class="item">Plazo para nominar beneficiarios</td>
-      <td class="mejor"><span class="badge">MEJOR</span><br>El cálculo se hace 120 días antes de la temporada con los pasajeros al día · resultado informado hasta 30 días antes del viaje</td>
-      <td>Hay que nominarlos dentro de los <b>30 días de la firma</b> por email; vencido el plazo, <b>el grupo pierde los beneficios</b></td>
+      <td>El cálculo se hace 120 días antes de la temporada con los pasajeros al día · resultado informado hasta 30 días antes del viaje</td>
+      <td><s>Nominar dentro de los 30 días de la firma o el grupo pierde los beneficios</s>
+        <span class="mod">Detalle Brown: el cálculo de liberados y acompañantes se hace <b>120 días antes</b> de la salida</span></td>
     </tr>
 
     <tr>
@@ -284,22 +292,23 @@
     <tr>
       <td class="item">Bonificados extra por promociones</td>
       <td class="mejor"><span class="badge">MEJOR</span><br>Garrahan: 25% de viaje liberado cada 300 kg de tapitas (hasta 8 veces por grupo, stock de 80 premios) · 10 viajes liberados por "mejores promedios" (compiten todos los grupos del año)
-        <span class="mod">Anexo: el ¼ Garrahan es "extra a la negociación" · Respuesta escrita ⚠️<sup>8</sup>: los 2 bonificados del grupo son "regalo gerencial" y no dependen de cuántos viajen</span></td>
+        <span class="mod">Anexo: el ¼ Garrahan es "extra a la negociación" · los 2 bonificados del grupo son "regalo gerencial" y no dependen de cuántos viajen</span></td>
       <td><s>El contrato no prevé ninguno</s>
-        <span class="mod">Propuesta: 1 bonificado extra ganado en el evento Champion Max ⚠️<sup>1</sup></span></td>
+        <span class="mod">Propuesta: 1 bonificado extra ganado en el evento Champion Max ⚠️<a class="ref" id="ref-1-8" href="#nota-1"><sup>1</sup></a></span></td>
     </tr>
 
     <tr>
       <td class="item">Acompañante terapéutico</td>
       <td>Contemplado: exige historia clínica, matrícula habilitante y ficha médica — sin gratuidad explícita</td>
       <td class="mejor"><span class="badge">MEJOR</span><br>Contemplado en contrato con prioridad de plazas
-        <span class="mod">Propuesta: incluido ⚠️<sup>1</sup> · pasajeros con CUD: descuento con certificado ⚠️<sup>1</sup></span></td>
+        <span class="mod">Propuesta: incluido ⚠️<a class="ref" id="ref-1-9" href="#nota-1"><sup>1</sup></a> · pasajeros con CUD: descuento con certificado ⚠️<a class="ref" id="ref-1-10" href="#nota-1"><sup>1</sup></a></span></td>
     </tr>
 
     <tr>
       <td class="item">Otros beneficios</td>
       <td>Tarjeta Club Baxtter (primeros 2.000 clientes) · convenios UAI (test vocacional, matrícula bonificada) · PRANA: cortes de pelo y tatuajes temporales · foto grupal · disfraces y maquillaje para fiestas (anexo)</td>
-      <td><span class="mod">Propuesta ⚠️<sup>1</sup>: rifas y ayudas económicas con premios a cargo de MaxDream · sorteo anual de iPhone · millas Max · link de fotos + película digital del viaje</span></td>
+      <td><span class="mod">Detalle Brown: ayudas económicas, rifas, estadías a Bariloche y millas Max</span>
+        <span class="nota">Propuesta ⚠️<a class="ref" id="ref-1-11" href="#nota-1"><sup>1</sup></a>: sorteo anual de iPhone · link de fotos + película digital del viaje</span></td>
     </tr>
 
     <!-- ============ 4. PAGOS EXTRA ============ -->
@@ -307,10 +316,11 @@
 
     <tr>
       <td class="item">Seguro de caución</td>
-      <td class="mejor"><span class="badge">MEJOR</span><br><s>Contrato ambiguo: la carátula dice "a cargo de la empresa", pero la hoja de pagos suma "+ seguro de caución según plan de pago"</s>
-        <span class="mod">Anexo: <b>incluido y prorrateado en las cuotas</b> (Prudencia Seguros) — $96.000 a $136.000 según plan (4% del valor)</span></td>
-      <td><b>No incluido</b> — se paga aparte (Woranz Seguros); la adhesión individual recién vale con la caución paga
-        <span class="mod">Propuesta: se puede abonar en cuotas antes de la salida ⚠️<sup>1</sup> · de palabra dicen 3% ⚠️<sup>7</sup></span></td>
+      <td>Incluida y prorrateada en las cuotas (Prudencia Seguros) — <b>4%</b> del valor del plan ($96.000 a $136.000)
+        <span class="mod">Anexo</span></td>
+      <td>No incluida — se paga aparte (Woranz Seguros), a nombre del adulto responsable; cubre el 100% del dinero
+        <span class="mod">Detalle Brown: <b>2,5% del valor del plan</b> · se puede abonar en cuotas antes de la salida</span>
+        <span class="nota">Más barata en % (2,5 vs 4), pero se abona aparte de las cuotas · el costo total ya está comparado arriba</span></td>
     </tr>
 
     <tr>
@@ -327,23 +337,26 @@
 
     <tr>
       <td class="item">Transfer colegio–aeropuerto</td>
-      <td>No incluido — los pasajeros llegan y se retiran con mayores a cargo
-        <span class="nota">El grupo pidió por adenda transfer sin costo si el vuelo sale de Ezeiza (pendiente de aceptación)<sup>10</sup></span></td>
-      <td>No incluido — se puede solicitar pagando el servicio, sujeto a disponibilidad</td>
+      <td class="mejor"><span class="badge">MEJOR</span><br><s>No incluido — los pasajeros llegan y se retiran con mayores a cargo</s>
+        <span class="mod">Anexo: lo incluyen <b>sin costo</b></span></td>
+      <td><s>No incluido — se solicita pagando el servicio</s>
+        <span class="mod">Detalle Brown: <b>incluido si el vuelo sale de Ezeiza</b></span></td>
     </tr>
 
     <tr>
       <td class="item">Seguro por rotura de ropa de nieve</td>
-      <td class="mejor"><span class="badge">MEJOR</span>
-        <span class="mod">Anexo: incluido (rotura parcial y total, con recambio diario)</span></td>
-      <td><b>Excluido expresamente</b> en el contrato (seguro de pérdida y rotura de ropa térmica)</td>
+      <td>Incluido (rotura parcial y total, con recambio diario)
+        <span class="mod">Anexo</span></td>
+      <td><s>Excluido expresamente en el contrato</s>
+        <span class="mod">Detalle Brown: <b>incluido</b> (seguro de rotura accidental + lavandería, recambio diario)</span></td>
     </tr>
 
     <tr>
       <td class="item">Otros conceptos no incluidos</td>
-      <td>Excursiones de terceros con cargo si el grupo las pide (Isla Victoria, rafting, Cerro Tronador) · equipaje: 15 kg + bolso de mano
-        <span class="nota">⚠️ La chequera Brown lista un "Seguro Integral (30 días)" con valor a confirmar<sup>8</sup></span></td>
-      <td>Impuestos a Parques Nacionales · tasas municipales · lavandería (⚠️ el folleto dice "lavandería incluida"<sup>2</sup>) · multas por ficha médica fuera de plazo · equipaje según política de la aerolínea (15 kg + 8 kg)</td>
+      <td><s>Excursiones de terceros con cargo si el grupo las pide</s> Paquete cerrado: salen con plan completo desde Buenos Aires, sin contrataciones extra en destino · equipaje: 15 kg + bolso de mano
+        <span class="mod">Anexo: el "Seguro Integral (30 días)" de la chequera <b>no se cobra</b> — solo se abona el depósito hotelero</span></td>
+      <td>Impuestos a Parques Nacionales · tasas municipales · depósito de garantía hotelero · multas por ficha médica fuera de plazo
+        <span class="mod">Detalle Brown: lavandería y seguro de rotura ahora <b>sí incluidos</b> · equipaje 15 + 8 kg + bolso</span></td>
     </tr>
 
     <!-- ============ 5. CONDICIONES LEGALES ============ -->
@@ -359,7 +372,7 @@
     <tr>
       <td class="item">¿Se cae el viaje si algunas familias dejan de pagar?</td>
       <td class="mejor"><span class="badge">MEJOR</span><br><b>No.</b> La deuda es individual: la empresa puede rescindir a ese pasajero (2 cuotas; promociones con 1), pero el viaje del grupo sigue · el tour solo puede cancelarse o reprogramarse si las bajas superan el <b>30%</b> del contingente
-        <span class="mod">Respuesta escrita ⚠️<sup>8</sup>: las familias atrasadas pueden regularizar y pagar hasta <b>60 días antes del viaje</b> · si se bajan chicos, los liberados no se pierden: queda piso de 1 c/8 por contrato</span></td>
+        <span class="mod">Anexo: las familias atrasadas pueden regularizar y pagar hasta <b>60 días antes del viaje</b> · si se bajan chicos, los liberados no se pierden: queda piso de 1 c/8 por contrato</span></td>
       <td><b>No, pero castiga más.</b> El moroso pasa automáticamente al plan de máximas cuotas a valor actualizado (1 cuota) o pierde el lugar (2 cuotas) · el tour puede cancelarse o reprogramarse si las bajas superan el <b>20%</b> · los beneficios (liberados/bonificados) se recalculan solo con los pasajeros al día: el grupo puede perderlos · en el UPD, el beneficio lo pierde individualmente quien no cumple los pagos</td>
     </tr>
 
@@ -367,29 +380,31 @@
       <td class="item">Cancelación individual — lo que retiene la empresa</td>
       <td class="mejor"><span class="badge">MEJOR</span><br>25% (hasta 60 días antes) · 35% (59–30 días) · 50% (29 días en adelante)
         <span class="nota">No devuelven la cuota cero ni $5.000 de gastos del fideicomiso · devolución dentro de 90 días</span></td>
-      <td>30% (hasta 60 días antes) · 40% (59–30 días) · 60% (29–8 días) · 80% (7 días o menos)
-        <span class="nota">Seña, tasas e impuestos quedan fuera de la base de reintegro · el ticket aéreo no se reintegra · devolución en 90 días hábiles</span></td>
+      <td><s>30% (hasta 60 días) · 40% (59–30) · 60% (29–8) · 80% (7 días o menos)</s>
+        <span class="mod">Detalle Brown: <b>25%</b> (hasta 60 días) · <b>35%</b> (59–30) · <b>50%</b> (29–8) · <b>70%</b> (7 días o menos) · ticket aéreo no reintegrable</span></td>
     </tr>
 
     <tr>
       <td class="item">Cancelación por fuerza mayor / pandemia</td>
       <td>Sin efecto: pandemia, cuarentena, guerra, etc. no dan derecho a cancelar con devolución</td>
       <td class="mejor"><span class="badge">MEJOR</span><br><s>Sin efecto (misma cláusula que Baxtter)</s>
-        <span class="mod">Propuesta: "por fuerza mayor, pandemia o impedimento de viaje se devuelve el 100% del dinero" ⚠️<sup>1</sup> — contradice el contrato: exigir que se asiente</span></td>
+        <span class="mod">Propuesta: "por fuerza mayor, pandemia o impedimento de viaje se devuelve el 100% del dinero" ⚠️<a class="ref" id="ref-1-12" href="#nota-1"><sup>1</sup></a> — contradice el contrato: exigir que se asiente</span></td>
     </tr>
 
     <tr>
       <td class="item">Mora</td>
       <td class="mejor"><span class="badge">MEJOR</span><br>2º vencimiento el día 30 con recargo del 10% · 2 cuotas atrasadas → la empresa puede rescindir (los planes promocionales caen con 1)
-        <span class="mod">Respuesta escrita ⚠️<sup>8</sup>: los atrasados pueden ponerse al día hasta 60 días antes del viaje</span></td>
-      <td>2º vencimiento del 11 al 20 ("no es pago a término") · <b>1 cuota atrasada → pasás automáticamente al plan de máximas cuotas a valor actualizado</b> · 2 cuotas → rescisión</td>
+        <span class="mod">Anexo: los atrasados pueden ponerse al día hasta 60 días antes del viaje</span></td>
+      <td><s>2º vencimiento del 11 al 20 · 1 cuota atrasada → pase automático a máximas cuotas</s>
+        <span class="mod">Detalle Brown: fechas de 1º y 2º vencimiento <b>a coordinar con el grupo</b> (ej. del 1 al 15 / del 15 al 30)</span></td>
     </tr>
 
     <tr>
       <td class="item">Ajuste por inflación</td>
-      <td class="mejor"><span class="badge">MEJOR</span><br>Ajuste por IPC (INDEC) · Plan B con tope 100% IPC · Plan C: 10 cuotas fijas <b>sin ajuste</b> mientras no te atrases · chequera Brown: 25 cuotas fijas de $136.000 ⚠️<sup>8</sup></td>
-      <td>Ajuste por IPC (INDEC) · si el IPC acumulado supera el 80%, la empresa puede <b>renegociar el precio</b> y el pasajero paga la diferencia
-        <span class="mod">Propuesta: cuotas en pesos fijas con "tolerancia de inflación al 100%" ⚠️<sup>1</sup></span></td>
+      <td class="mejor"><span class="badge">MEJOR</span><br><s>Ajuste por IPC (INDEC) · Plan B con tope 100% IPC</s>
+        <span class="mod">Anexo: <b>eliminan la cláusula de ajuste por inflación</b> · cuotas fijas sin tope de IPC · chequera Brown: 25 cuotas fijas de $136.000</span></td>
+      <td><s>Si el IPC acumulado supera el 80%, la empresa puede renegociar el precio</s>
+        <span class="mod">Detalle Brown: cuotas fijas, se ajusta solo si el <b>IPC acumulado supera el 130%</b></span></td>
     </tr>
 
     <tr>
@@ -420,7 +435,7 @@
     <tr>
       <td class="item">Validez de lo prometido de palabra</td>
       <td>Solo vale lo que figura por escrito, refrendado por apoderados de Maipú 116 (CABA) — ninguna hoja adjunta sin membrete, sello y firma
-        <span class="nota">El grupo preparó una extensión del anexo para asentar promesas (vuelo de mañana, precios inalterables, punitorios definidos, padrón del grupo, etc.) — pendiente de aceptación<sup>10</sup></span></td>
+        <span class="nota">El grupo preparó una extensión del anexo para asentar promesas (vuelo de mañana, precios inalterables, punitorios definidos, padrón del grupo, etc.) — pendiente de aceptación<a class="ref" id="ref-10-1" href="#nota-10"><sup>10</sup></a></span></td>
       <td>Solo vale lo ingresado al aprobarse el contrato, refrendado por Casa Central — el contrato <b>reemplaza toda negociación previa</b></td>
     </tr>
 
@@ -430,13 +445,13 @@
     <tr>
       <td class="item">Razón social y trayectoria</td>
       <td>Express S.R.L. · CUIT 33-64354439-9 · 33 años (desde 1990) · Disp. DI-2024-72-APN · Urquiza 64, Acassuso
-        <span class="nota">Nosis: socios/gerentes en común con Travel Rock S.A. (E. Ronzoni)<sup>5</sup> · adjudicataria de programas oficiales de egresados de la Prov. de Bs. As.</span></td>
+        <span class="nota">Nosis: socios/gerentes en común con Travel Rock S.A. (E. Ronzoni)<a class="ref" id="ref-5-1" href="#nota-5"><sup>5</sup></a> · adjudicataria de programas oficiales de egresados de la Prov. de Bs. As.</span></td>
       <td>Maxpoint S.A. · CUIT 30-70823349-4 · 22 años (desde 2002) · Legajo 11.586 · Disp. 01/2024 · Esmeralda 672, CABA
         <span class="nota">Directorio: S. Meyras (presidente) y C. Giorgi (suplente)</span></td>
     </tr>
 
     <tr>
-      <td class="item">Reseñas de la empresa (Google y reclamos)<sup>11</sup></td>
+      <td class="item">Reseñas de la empresa (Google y reclamos)<a class="ref" id="ref-11-1" href="#nota-11"><sup>11</sup></a></td>
       <td class="mejor"><span class="badge">MEJOR</span><br>Google: ~3,5★ (dato de espejos, sin verificación en vivo) · tuquejasuma: cientos de reclamos, <b>12% resueltos</b>
         <span class="nota">Quejas típicas: valijas extraviadas, excursiones no realizadas, promesas verbales no respetadas, cambios de hotel sobre la fecha · Episodio Escobar 2024: "tasa de embarque" de $257.000 reducida a $135.000 tras intervención de Defensa del Consumidor</span></td>
       <td>Google: pocas reseñas y polarizadas ("cumplieron todo" vs "estafadores") · tuquejasuma: cientos de reclamos, <b>14% resueltos</b>
@@ -444,13 +459,13 @@
     </tr>
 
     <tr>
-      <td class="item">Situación judicial verificable<sup>11</sup></td>
+      <td class="item">Situación judicial verificable<a class="ref" id="ref-11-2" href="#nota-11"><sup>11</sup></a></td>
       <td class="mejor"><span class="badge">MEJOR</span><br>Sin demandas colectivas conocidas · sin volumen judicial relevante registrado · los blogs que anuncian su "quiebra" (2018) son material hostil no verificado: 8 años después sigue operando</td>
       <td><b>Acción colectiva de ADECUA en trámite</b> (causa 118812/2024-0, CABA) por cobros fuera de contrato · cautelares de consumo perdidas (Corte Suprema de Tucumán, 2025: orden de readmitir a una alumna al precio pactado) · varios juicios laborales por despidos · el rumor de quiebra (2024) <b>no está confirmado</b>: no hay expediente concursal y sigue habilitada</td>
     </tr>
 
     <tr>
-      <td class="item">Solvencia — informe Nosis<sup>5</sup></td>
+      <td class="item">Solvencia — informe Nosis<a class="ref" id="ref-5-2" href="#nota-5"><sup>5</sup></a></td>
       <td>Informe 09/2023: BCRA situación 1 (normal) · sin cheques rechazados · sin concursos ni quiebras · sin deudas fiscales · último balance: patrimonio neto $516,7 M, resultado positivo $125,0 M · 18–22 empleados · deuda financiera $70,6 M
         <span class="nota">⚠️ Registra pago "parcial" de aportes patronales en los últimos 12 meses · informe con 2 años de antigüedad</span></td>
       <td>Informe 05/2025: BCRA situación 1 (normal) desde 06/2021 · sin cheques rechazados · deuda financiera baja ($5,3 M) · 25–35 empleados · aportes patronales pagos · ART vigente
@@ -458,7 +473,7 @@
     </tr>
 
     <tr>
-      <td class="item">Evaluación de riesgo<sup>11</sup></td>
+      <td class="item">Evaluación de riesgo<a class="ref" id="ref-11-3" href="#nota-11"><sup>11</sup></a></td>
       <td class="mejor"><span class="badge">MEJOR</span><br><b>Riesgo medio-bajo.</b> Mala reputación de servicio (reclamos, episodio Escobar) pero sin litigio colectivo ni señales judiciales o financieras de insolvencia; balance sólido y presunto respaldo del grupo Travel Rock — que a su vez tuvo su propio escándalo de cuotas extra en 2024</td>
       <td><b>Riesgo medio-alto.</b> Indicadores financieros formales en orden, pero acumula la peor foja verificable del rubro: demanda colectiva en trámite, fallos de consumo en contra, juicios laborales y un patrón documentado de sobrecostos de último momento en varias provincias · el riesgo realista no es "perder el viaje" sino pagar extras no pactados
         <span class="nota">Red de seguridad común: caución por el 100% (Res. 1/2024) y precedente Snow Travel 2018, donde todos los chicos viajaron igual vía el fideicomiso</span></td>
@@ -468,20 +483,21 @@
   </table>
 
   <div class="pie">
+    <h2>Cómo leer esta tabla</h2>
+    <p style="margin:0 0 6px"><b>✏️ Baxtter — anexo Brown 2028:</b> el contenido marcado con ✏️ consolida el anexo Brown, la chequera "Plan Brown" (25 cuotas de $136.000, caución 4%) y las precisiones de la empresa del 30/05 y 09/06 — todo tomado como condición del grupo: 18 actividades (con Snow Feet y Winter Jump), líderes propios, cuotas fijas sin tope de IPC, transfer sin costo, "Seguro Integral" que no se cobra y eliminación del ajuste por inflación.</p>
+    <p style="margin:0 0 6px"><b>Detalle Brown — MaxDream:</b> lo marcado como "Detalle Brown" sale de los documentos de servicios del colegio Almirante Brown (incluida la planilla "Modificaciones al cuadro" del 10/6, equivalente al anexo de Baxtter): vuelo por Aerolíneas u opción chárter "no Andes" con transfer incluido desde Ezeiza, 17 actividades con paquete cerrado, 8 noches de disco, indumentaria toda la semana con seguro y lavandería, caución 2,5%, beneficios calculados a 120 días, IPC recién sobre 130%, cancelación 25/35/50/70% y vencimientos a coordinar, vuelo de un familiar a cargo de la empresa, ticket aéreo del liberado incluido.</p>
+    <p style="margin:0 0 6px"><b>⚠️ Solo de la propuesta de junio (MaxDream):</b> lo marcado con ⚠️ aún no aparece en el detalle Brown: los precios de las cuotas, la inscripción de $250.000, la proporción de liberados (1 c/8) y acompañantes (1 c/12), el bonificado Champion Max y la devolución del 100% por fuerza mayor/pandemia. Pedir que queden por escrito.</p>
+    <p style="margin:0 0 10px"><b>Criterio "Mejor" (🟩):</b> se compara el valor vigente tras el anexo/detalle de cada grupo. Sin recuadro = empate o sin dato comparable.</p>
     <h2>Notas y fuentes</h2>
     <ol>
-      <li><b>⚠️ Propuesta MaxDream:</b> los valores y mejoras marcados con ✏️ en la columna MaxDream salen de la "Propuesta Económica Bariloche Full Max – Premium Max" (Almirante Brown, junio 2026). <b>No es un anexo firmado</b>: el contrato de Maxpoint dice que solo vale lo refrendado por Casa Central y que el contrato reemplaza toda negociación previa. Antes de firmar, exigir que cada punto quede asentado en el anexo oficial.</li>
-      <li><b>⚠️ Material promocional:</b> datos que surgen de folletos (Detalle de Servicios MXD 2028, ALFA GEN 2028 de Baxtter, brochures): no son contractuales.</li>
-      <li><b>Reputación médica:</b> ratings de Google Maps y Trustpilot al 7/6/2026. Assist Card: 4,5★ Google (2.006 reseñas) / 4,3 Trustpilot. AssisTravel: 4,1★ (384). Vittal (sede central): 2,0★ (125) — sus quejas refieren sobre todo al servicio domiciliario de abonados, no al de eventos. En ambas empresas el seguro lo emite Federación Patronal; la diferencia está en la prestadora de asistencia y la red en Bariloche.</li>
-      <li><b>Comparación de costos:</b> precios de Baxtter según el anexo Brown 2028 y la chequera Brown (incluyen caución del 4% prorrateada); precios de MaxDream según la propuesta de junio 2026 ⚠️ (no incluyen la caución Woranz, que se paga aparte). En ningún caso se incluyen tasas de embarque e impuestos. Los planes no son idénticos: Baxtter 1/3/10/25 cuotas, MaxDream 1/3/13/27 cuotas; se comparó el tramo más parecido.</li>
-      <li><b>Informes Nosis:</b> Express S.R.L. consultado el 28/09/2023 (tiene 2 años: pedir uno actualizado); Maxpoint S.A. el 26/05/2025. El árbol societario de Express muestra a Enrique Ronzoni como accionista/gerente y a la vez socio de Travel Rock S.A. Los informes no implican juicio de valor sobre la solvencia.</li>
-      <li><b>Calificaciones de hoteles:</b> ratings de Google (Google Hotels/Maps) relevados el 7/6/2026. Promedio ponderado por cantidad de reseñas. Respaldos: Booking y TripAdvisor. El promedio "vigente" de Baxtter excluye Bariloche Ski según su respuesta escrita del 30/5. En MaxDream se tomó Villa Huinid Bustillo (Km 2,5, el del contrato); la sede Pioneros tiene 4,4★ (2.791).</li>
-      <li><b>Caución MaxDream al 3%:</b> es lo que la empresa informa verbalmente; no figura en el contrato, la propuesta ni los folletos. Exigir que el porcentaje (o monto) quede asentado por escrito antes de firmar.</li>
-      <li><b>⚠️ Documentos nuevos de Baxtter (30/05/2026):</b> respuestas por WhatsApp (hoteles vigentes, 1 pago = 3 cuotas, 4+2 beneficios para 30 chicos, liberado paga 10%, mora hasta 60 días antes) y chequera "Plan Brown" (25 cuotas de $136.000, caución 4%, "Seguro Integral 30 días" a confirmar). Son respuestas escritas de la empresa pero <b>no son el anexo firmado</b>: el contrato de Baxtter dice que solo vale lo refrendado por sus apoderados — exigir que todo quede asentado en el anexo definitivo.</li>
-      <li><b>Calificaciones de actividades y discos:</b> ratings de Google relevados el 7/6/2026 vía espejos (Wanderlog, Top-Rated). Las cinco discotecas (grupo Alliance/Efesur, todas en J.M. de Rosas) y el Cerro Catedral son los mismos prestadores para ambas empresas, por eso se comparan solo las actividades diferenciales. Los eventos propios (Liquid Flúo, MXD Festival, Aventura Baxtter) no tienen reseñas públicas.</li>
-      <li><b>Extensión de anexo del grupo:</b> borrador preparado por los padres para Baxtter (vuelo de mañana 7–12 h, transfer Ezeiza sin costo, habitación exclusiva para mujeres, precios fijos e inalterables, punitorios definidos por tramo, padrón del grupo a disposición, renominación de acompañantes hasta 45 días antes, excursiones reemplazadas por fuerza mayor, prevalencia del anexo sobre el contrato). Pendiente de aceptación por la empresa.</li>
-      <li><b>Reputación y riesgo de las empresas:</b> investigación con fuentes públicas al 7/6/2026: tuquejasuma (índices de resolución 12% Baxtter / 14% Maxdream), vLex (causas Maxpoint: ADECUA 118812/2024-0, despidos, cautelares), Boletín Oficial CABA, prensa (ADN Río Negro, Bariloche Más, El Cordillerano, La Arena/El Diario de La Pampa, LM Neuquén, hechos.ar, Infobae). Los ratings de Google de las oficinas no pudieron verificarse en vivo (valores de espejos de terceros). Se distinguen hechos con expediente de rumores y material hostil de competidores. No constituye asesoramiento legal ni financiero.</li>
-      <li><b>Criterio "Mejor":</b> se compara el valor vigente después del anexo/propuesta/respuestas escritas (lo marcado con ✏️). Cuando el ganador depende de algo no asentado en contrato lleva ⚠️. Sin recuadro = empate o sin dato comparable.</li>
+      <li value="1" id="nota-1"><b>Propuesta MaxDream (junio 2026):</b> los precios de las cuotas, la inscripción, la proporción de liberados/acompañantes, el bonificado Champion Max y la devolución por pandemia salen de la "Propuesta Económica Almirante Brown" y todavía no figuran en el detalle Brown. Pendientes de confirmar por escrito. <a class="volver" href="#ref-1-1" title="Volver al texto">↩</a></li>
+      <li value="3" id="nota-3"><b>Reputación médica:</b> ratings de Google Maps y Trustpilot al 7/6/2026. Assist Card: 4,5★ Google (2.006 reseñas) / 4,3 Trustpilot. AssisTravel: 4,1★ (384). Vittal (sede central): 2,0★ (125) — sus quejas refieren sobre todo al servicio domiciliario de abonados, no al de eventos. En ambas empresas el seguro lo emite Federación Patronal; la diferencia está en la prestadora de asistencia y la red en Bariloche. <a class="volver" href="#ref-3-1" title="Volver al texto">↩</a></li>
+      <li value="4" id="nota-4"><b>Comparación de costos:</b> precios de Baxtter según el anexo y la chequera Brown (caución 4% ya prorrateada en las cuotas); precios de MaxDream según la propuesta de junio ⚠️, a los que se sumó la caución del 2,5% que fija el detalle Brown (se paga aparte). No incluyen tasas de embarque ni impuestos. Los planes no son idénticos (Baxtter 1/3/10/25 cuotas, MaxDream 1/3/13/27); se comparó el tramo más parecido. Los montos de MaxDream siguen pendientes de confirmación por escrito. <a class="volver" href="#ref-4-1" title="Volver al texto">↩</a></li>
+      <li value="5" id="nota-5"><b>Informes Nosis:</b> Express S.R.L. consultado el 28/09/2023 (tiene 2 años: pedir uno actualizado); Maxpoint S.A. el 26/05/2025. El árbol societario de Express muestra a Enrique Ronzoni como accionista/gerente y a la vez socio de Travel Rock S.A. Los informes no implican juicio de valor sobre la solvencia. <a class="volver" href="#ref-5-1" title="Volver al texto">↩</a></li>
+      <li value="6" id="nota-6"><b>Calificaciones de hoteles:</b> ratings de Google (Google Hotels/Maps) relevados el 7/6/2026, promedio ponderado por cantidad de reseñas. Respaldos: Booking y TripAdvisor. El promedio "vigente" de Baxtter excluye Bariloche Ski (fuera de las opciones). En MaxDream se tomó Villa Huinid Bustillo (Km 2,5, el del contrato); la sede Pioneros tiene 4,4★ (2.791). <a class="volver" href="#ref-6-1" title="Volver al texto">↩</a></li>
+      <li value="9" id="nota-9"><b>Calificaciones de actividades y discos:</b> ratings de Google relevados el 7/6/2026 vía espejos (Wanderlog, Top-Rated). Las cinco discotecas (grupo Alliance/Efesur) y el Cerro Catedral son los mismos prestadores para ambas empresas, por eso se comparan solo las actividades diferenciales. Los eventos propios (Liquid Flúo, MXD Festival, Aventura Baxtter) no tienen reseñas públicas. <a class="volver" href="#ref-9-1" title="Volver al texto">↩</a></li>
+      <li value="10" id="nota-10"><b>Extensión de anexo del grupo (Baxtter):</b> borrador preparado por los padres (vuelo de mañana 7–12 h, transfer Ezeiza sin costo, habitación exclusiva para mujeres, precios fijos e inalterables, punitorios definidos por tramo, padrón del grupo a disposición, renominación de acompañantes hasta 45 días antes, excursiones reemplazadas por fuerza mayor, prevalencia del anexo sobre el contrato). Pendiente de aceptación. <a class="volver" href="#ref-10-1" title="Volver al texto">↩</a></li>
+      <li value="11" id="nota-11"><b>Reputación y riesgo de las empresas:</b> fuentes públicas al 7/6/2026: tuquejasuma (resolución 12% Baxtter / 14% Maxdream), vLex (causas Maxpoint: ADECUA 118812/2024-0, despidos, cautelares), Boletín Oficial CABA, prensa (ADN Río Negro, Bariloche Más, El Cordillerano, La Arena, LM Neuquén, Infobae). Los ratings de Google de las oficinas no se verificaron en vivo (valores de espejos de terceros). Se distinguen hechos con expediente de rumores y material hostil de competidores. No constituye asesoramiento legal ni financiero. <a class="volver" href="#ref-11-1" title="Volver al texto">↩</a></li>
     </ol>
   </div>
 </div>
